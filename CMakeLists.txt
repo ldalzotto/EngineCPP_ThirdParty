@@ -33,3 +33,7 @@ else()
     target_link_libraries(GLSLANG INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/glslang/lib/win32/rel/SPIRV-Tools.lib")
     target_link_libraries(GLSLANG INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/glslang/lib/win32/rel/SPIRV-Tools-opt.lib")
 endif()
+
+add_library(SQLite INTERFACE)
+target_include_directories(SQLite INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/sqlite/public/")
+target_link_libraries(SQLite INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/sqlite/lib/SQLite.lib")
