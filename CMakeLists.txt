@@ -1,9 +1,4 @@
 
-add_library(GLFW INTERFACE)
-target_include_directories(GLFW INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/GLFW")
-target_link_libraries(GLFW INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/GLFW/lib/win32/glfw3.lib")
-# target_link_libraries(GLFW INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/GLFW/lib/linux/glfw3.lib")
-
 add_library(VULKAN INTERFACE)
 target_include_directories(VULKAN INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/vulkan")
 target_link_libraries(VULKAN INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/vulkan/lib/win32/vulkan-1.lib")
