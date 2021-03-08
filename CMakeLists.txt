@@ -32,3 +32,6 @@ endif()
 add_library(SQLite INTERFACE)
 target_include_directories(SQLite INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/sqlite/public/")
 target_link_libraries(SQLite INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/sqlite/lib/SQLite.lib")
+
+add_library(STB_IMAGE INTERFACE)
+target_include_directories(STB_IMAGE INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/stb_image/public/")
